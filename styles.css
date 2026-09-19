@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+header {
+  background: #172033;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { font-size: 24px; font-weight: 800; }
+header span { opacity: .7; }
+
+main {
+  width: 90%;
+  max-width: 820px;
+  margin: 35px auto;
+}
+
+.hero {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #635bff;
+  font-weight: 800;
+}
+
+h1 { font-size: 38px; margin: 8px 0; }
+
+.name-card, .question {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  margin: 16px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+input[type="text"], .name-card input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9dee8;
+  border-radius: 10px;
+  margin-top: 9px;
+  font-size: 16px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #e1e5ec;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.option.selected {
+  border-color: #635bff;
+  background: #f2f1ff;
+}
+
+.option span {
+  font-weight: 800;
+}
+
+.submit, .result button {
+  border: 0;
+  border-radius: 12px;
+  padding: 15px 24px;
+  background: #635bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit { width: 100%; margin: 15px 0 40px; }
+
+.result {
+  text-align: center;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.result h2 { font-size: 48px; margin: 8px; }
+.result strong { display: block; font-size: 24px; margin-bottom: 20px; }
+
+.center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 600px) {
+  header { display: block; }
+  header span { display: block; margin-top: 5px; }
+  h1 { font-size: 30px; }
+}
